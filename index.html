@@ -486,9 +486,6 @@
         <button id="addPersonButton" class="secondary">
           ➕ 今回の人の票を合計に追加
         </button>
-        <button id="summaryButton">
-          🧮 合計を見る
-        </button>
         <button id="resetAllButton" class="secondary danger">
           ♻️ 全リセット
         </button>
@@ -956,12 +953,6 @@
 
         totalParticipants += 1;
         clearSelections();
-        renderSummary();
-        summaryArea.scrollIntoView({ behavior: "smooth" });
-      });
-
-      // 合計を見る（参加者追加なし）
-      document.getElementById("summaryButton").addEventListener("click", function () {
         renderSummary();
         summaryArea.scrollIntoView({ behavior: "smooth" });
       });
